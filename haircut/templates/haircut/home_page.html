@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>jim's haircut shop</title>
+</head>
+<body>
+     <h1>jim's haircut shop</h1>
+     <p>jim is a nice guy</p>
+
+
+     <!--time-->
+     <p>jim like cool guy</p>
+     <img src="https://tse1.mm.bing.net/th?id=OIP.wKM2NPOTHwV9GGgHnoN62AHaE7&pid=Api">
+
+     <!--time-->
+     <p>jjjj</p>
+     <img src="https://tse2-mm.cn.bing.net/th?id=OIP.i1tDd1UA5roGi6xQsfvqagHaE9&pid=Api">
+     <!--time-->
+     <p>jjjj</p>
+     <img src="http://tse3.mm.bing.net/th?id=OIP.XuVgXlRrBb8r6sKh4_8oYAHaE8&pid=Api">
+
+
+    <!-- User Form -->
+    <h1>choose time</h1>
+    <form action="{% url 'haircut:home_page' %} " method="POST">
+        {% csrf_token %}
+        <input type="text" name="time" placeholder="Type Your time"><br>
+        <textarea placeholder="choose barber" name="customer_name"></textarea><br>
+        <input type="submit" value="choose!">
+    </form>
+    <h1>Your Order</h1>
+    <p>Item: {{time}}</p>
+    <p>Address: {{customer_name}}</p>
+
+</body>
+</html>
+</body>
+
+</html>
